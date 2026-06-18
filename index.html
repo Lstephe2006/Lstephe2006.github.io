@@ -2,83 +2,147 @@
 <html>
 <head>
     <title>My Data Science Portfolio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f7fb;
+            color: #222;
+        }
+
+        header {
+            background-color: #1f3a93;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 30px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #1f3a93;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .skills li {
+            display: inline-block;
+            background: #1f3a93;
+            color: white;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        a {
+            color: #1f3a93;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
 </head>
 
 <body>
 
+<header>
     <h1>Hi, I'm Luke</h1>
-    <p>Data Science Student</p>
+    <p>Data Science Student | Python | SQL | Machine Learning</p>
+</header>
 
-    <hr>
+<div class="container">
 
     <h2>About Me</h2>
-    <p>
-        I am a Data Science student interested in machine learning, data analysis,
-        and building real-world data-driven solutions using Python and SQL.
-    </p>
+    <div class="card">
+        <p>
+            I am a Data Science student interested in machine learning, data analysis,
+            and building real-world data-driven solutions using Python and SQL.
+        </p>
+    </div>
 
     <h2>Skills</h2>
-    <ul>
-        <li>Python</li>
-        <li>SQL</li>
-        <li>Pandas / NumPy</li>
-        <li>Machine Learning (Scikit-learn)</li>
-        <li>Data Visualisation</li>
-        <li>GitHub</li>
-    </ul>
+    <div class="card">
+        <ul class="skills">
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Pandas</li>
+            <li>NumPy</li>
+            <li>Scikit-learn</li>
+            <li>Data Visualisation</li>
+            <li>GitHub</li>
+        </ul>
+    </div>
 
     <h2>Projects</h2>
 
-    <h3>Customer Churn Prediction</h3>
-    <p>
-        Built a machine learning model to predict customer churn using classification algorithms.
-        Cleaned data, engineered features, and evaluated model performance.
-    </p>
-    <p>
-        Tools: Python, Pandas, Scikit-learn
-    </p>
-    <p>
-        <a href="https://github.com/yourusername/churn-project">GitHub Repo</a>
-    </p>
+    <div class="card">
+        <h3>Customer Churn Prediction</h3>
+        <p>Built a machine learning model to predict customer churn.</p>
+        <p><b>Tools:</b> Python, Pandas, Scikit-learn</p>
+        <a href="#">GitHub Repo</a>
+    </div>
 
-    <h3>House Price Prediction</h3>
-    <p>
-        Developed a regression model to predict house prices based on property features.
-        Performed exploratory data analysis and feature selection.
-    </p>
-    <p>
-        Tools: Python, Pandas, Matplotlib
-    </p>
-    <p>
-        <a href="https://github.com/yourusername/house-price-project">GitHub Repo</a>
-    </p>
+    <div class="card">
+        <h3>House Price Prediction</h3>
+        <p>Regression model predicting housing prices using real datasets.</p>
+        <p><b>Tools:</b> Python, Pandas, Matplotlib</p>
+        <a href="#">GitHub Repo</a>
+    </div>
 
-    <h3>SQL Data Analysis Project</h3>
-    <p>
-        Analysed a dataset using SQL queries to extract insights and trends.
-    </p>
-    <p>
-        Tools: SQL
-    </p>
-    <p>
-        <a href="https://github.com/yourusername/sql-project">GitHub Repo</a>
-    </p>
+    <div class="card">
+        <h3>SQL Data Analysis</h3>
+        <p>Used SQL queries to extract insights from structured data.</p>
+        <p><b>Tools:</b> SQL</p>
+        <a href="#">GitHub Repo</a>
+    </div>
 
     <h2>Contact</h2>
-    <p>Email: yourname@email.com</p>
-    <p>
-        GitHub:
-        <a href="https://github.com/yourusername">github.com/yourusername</a>
-    </p>
+    <div class="card">
+        <p>Email: yourname@email.com</p>
+        <p>GitHub: <a href="#">github.com/yourusername</a></p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+    </div>
 
-    <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/">My LinkedIn</a>
-    </p>
+</div>
 
-    <hr>
-
-    <p>© 2026 My Portfolio</p>
+<footer>
+    © 2026 My Data Science Portfolio
+</footer>
 
 </body>
 </html>
